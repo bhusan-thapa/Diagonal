@@ -1,0 +1,127 @@
+@media(max-width: 992px) {
+    .menu-primary {
+        display: none;
+    }
+}
+
+@media( min-width: 769px) {
+    .timeline {
+        .timeline-item {
+            // On the left side
+            &:nth-child(even) {
+                justify-content: flex-start;
+                
+                .timeline-item-wrapper {
+                    padding: 0 90px 0 0;
+                    
+                    .timeline__count {
+                        left: auto;
+                        right: 10px;
+                        background-color: transparentize($color-secondary, 0.8);
+                        
+                        &::before {
+                            background-color: transparentize($color-secondary, 0.8);
+                        }
+                    }
+                }
+                
+                &::before {
+                    left: auto;
+                    right: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+
+    .header-actions {
+        .btn {
+            display: none;
+        }
+    }
+
+    .menu-fullscreen {
+        &.menu-fullscreen-large {
+            li {
+                a {
+                    font-size: calc(1rem + 3.46667vw);
+                }
+            }
+        }
+    }
+
+    .hero-info {
+
+        .hero__sub-title {
+            font-size: 38px;
+        }
+    }
+
+
+    .timeline {
+        &::before,
+        &::after {
+          
+            left: 0;
+        }
+
+        .timeline-inner-wrap {
+        
+            &::before {
+                left: 15px;
+            }
+        }
+
+        .timeline-item {
+            margin-left: 40px;
+            justify-content: flex-start;
+
+
+            &::before {
+                display: none;
+            }
+
+        }
+    }
+
+    .article__title {
+        font-size: calc(0.8rem + 3.46667vw);
+    }
+
+    .blog-post {
+        margin-bottom: 80px;
+    }
+
+    .page-header {
+        .page-title {
+            font-size: calc(1.8rem + 3.46667vw);
+        }
+    }
+
+    .inner-heading {
+        .inner-heading__title {
+            font-size: calc(0.8rem + 3.46667vw);
+        }
+    }
+    .article__title {
+        font-size: calc(0.8rem + 3.46667vw);
+    }
+
+    .popup-cookie {
+        .cookie__info {
+            margin-bottom: 30px;
+        }
+
+        .cookie-button {
+            text-align: center;
+        }
+    }
+
+    .content-info {
+        .content-title {
+            font-size: calc(1rem + 3.46667vw);
+        }
+    }
+}

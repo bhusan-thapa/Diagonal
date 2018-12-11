@@ -1,0 +1,54 @@
+@media(max-width: 576px) {
+
+    .hero-banner {
+        text-align: center;
+    }
+
+    .hero-info {
+        margin-bottom: 30px;
+
+        .hero__title {
+            &::before {
+                display: none;
+            }
+        }
+
+        .hero__sub-title {
+            font-size: 32px;
+        }
+    }
+
+    .section-box {
+        padding: 20px 0;
+    }
+
+    .heading { 
+    
+        .heading__sub-title {
+            font-size: 28px;
+        }
+    }
+
+    .services-container {
+        text-align: center;
+
+        .service {
+           margin-bottom: 120px;
+
+            .service__title {
+                font-size: $font-size-h3;
+                margin-bottom: 20px;
+            }
+    
+            .service__sub-title {
+                font-size: $font-size-h5;
+                font-weight: normal;
+                margin-bottom: 30px;
+            }
+            
+            .service-thumbnail {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

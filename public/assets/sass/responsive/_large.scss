@@ -1,0 +1,15 @@
+@media(min-width: 1200px) {
+    .timeline {
+        .timeline-item {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 10%;
+                left: 50%;
+                height: 3px;
+                background-color: $color-gray-2;
+                top: 30px;
+            }
+        }
+    }
+}

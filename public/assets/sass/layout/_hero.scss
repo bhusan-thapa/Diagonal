@@ -1,0 +1,36 @@
+/*=============================================
+=            Hero            =
+=============================================*/
+.hero-banner {
+    padding: 80px 0;
+}
+
+.hero-info {
+    
+    .hero__title {
+        font-size: 21px;
+        color: $color-primary;
+        position: relative;
+        margin: 0 0 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 80px;
+            background-color: $color-primary;
+            right: 10px;
+            bottom: 5px;
+        }
+    }
+
+    .hero__sub-title {
+        font-size: $font-size-h1;
+        max-width: 430px;
+        margin-bottom: 20px;
+    }
+
+    .hero__description {
+        margin-bottom: 40px;
+    }
+}

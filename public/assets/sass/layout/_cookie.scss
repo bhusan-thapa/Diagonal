@@ -1,0 +1,29 @@
+.popup-cookie {
+    background-color: $color-primary;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 -15px 30px rgba(7, 27, 130, 0.2);
+    padding: 40px 0;
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+
+    .cookie__info {
+        margin: 0;
+    }
+
+    .cookie-button {
+        text-align: right;
+    }
+    
+    &.popup-cookie--show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}

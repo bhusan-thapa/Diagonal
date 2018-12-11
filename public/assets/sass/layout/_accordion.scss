@@ -1,0 +1,64 @@
+.accordion {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .accordion-item {
+        
+        &:first-child {
+            .accordion-item-header {
+                
+                .accordion-item-title {
+                    a {
+                        border-top: 1px solid $color-gray-2;
+                    }
+                }
+            }
+        }
+
+        .accordion-item-header {
+            
+            .accordion-item-title {
+                font-size: 16px;
+                font-weight: 600;
+                
+                a {
+                    color: $color-heading;
+                    text-decoration: none;
+                    display: block;
+                    padding: 20px 20px 20px 0;
+                    border-bottom: 1px solid $color-gray-2;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-image: url('assets/img/cone-up.svg');
+                        width: 13px;
+                        height: 16px;
+                        background-repeat: no-repeat;
+                        right: 0;
+                        top: calc(50% - 8px);
+                    }
+
+                    &.collapsed {
+                        &::before {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .accordion-item-content {
+            padding: 20px 0 40px;
+        }
+    }
+}
+
+.accordion--center {
+    max-width: 720px;
+    margin: 0 auto;
+}

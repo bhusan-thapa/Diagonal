@@ -1,0 +1,35 @@
+/*=============================================
+=            Button            =
+=============================================*/
+
+.btn {
+	padding: 12px 20px;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: $font-family-heading;
+}
+
+.btn-primary {
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+	box-shadow: 0 15px 30px rgba(7, 27, 130, 0.2);
+	transition: background-color box-shadow 0.35s ease-in-out;
+
+	&:hover {
+		background-color: darken($color-primary, 5);
+		box-shadow: 0 20px 50px rgba(7, 27, 130, 0.2);
+	}
+}
+
+.btn-gray {
+	color: #5B677C;
+	text-decoration: none;
+}
+
+.btn-light {
+	background-color: #fff;
+
+	&:hover {
+		background-color: #fff;
+	}
+}

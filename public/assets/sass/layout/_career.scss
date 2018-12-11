@@ -1,0 +1,69 @@
+.career-info {
+    max-width: 840px;
+    margin: 0 auto;
+    color: $color-gray-7;
+    text-align: center;
+    
+    p {
+        margin-bottom: 60px;
+    }
+}
+
+.career-benefits {
+    .benefits {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        
+        .benefit__thumbnail {
+            margin: 0 0 25px;
+            
+            img {
+                height: 60px;
+            }
+        }
+        
+        .benefit__title {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .benefit__description {
+            color: $color-gray-7;
+        }
+    }
+}
+
+.current-openings {
+    .openings {
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+        max-width: 300px;
+        
+        li {
+            padding: 0 0 0 30px;
+            position: relative;
+            margin-bottom: 20px;
+            
+            &::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                left: 0;
+                position: absolute;
+                background-image: url('assets/img/right-cone.svg');
+                background-repeat: no-repeat;
+            }
+
+            a {
+                display: block;
+                color: $color-heading;
+            }
+        }
+    }
+}

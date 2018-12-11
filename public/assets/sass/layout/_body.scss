@@ -1,0 +1,12 @@
+.page-container {
+    margin: 130px 0 60px;
+}
+
+body.fullscreen-navigation--open {
+
+    .navigation-fullscreen {
+        transform: translateY(0);
+		visibility: visible;
+		opacity: 1;
+    }
+}

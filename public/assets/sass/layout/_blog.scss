@@ -1,0 +1,47 @@
+.article-header,
+.article-content {
+    max-width: 720px;
+    margin: 0 auto 40px;
+}
+
+.article__title {
+    margin-bottom: 20px;
+}
+
+.article-meta {
+    font-size: 14px;
+
+    span {
+        color: $color-gray-7;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        color: $color-heading;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.article-thumbnail {
+    max-width: 904px;
+    margin: 0 auto 60px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.blog-post {
+    margin-bottom: 160px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

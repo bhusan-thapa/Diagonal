@@ -1,0 +1,135 @@
+/*=============================================
+=            Header            =
+=============================================*/
+
+.header-top {
+    height: 60px;
+    margin-bottom: -20px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+    }
+    
+    .language-changer {
+        font-size: 13px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        
+        li {
+            padding: 0 0 2px;
+            margin-left: 10px;
+            
+            img {
+                margin-right: 5px;
+                width: 14px;
+            }
+            
+            &.active {
+                border-bottom: 1px solid $color-body;
+            }
+
+            a {
+                color: $color-heading;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    
+    .container--header {
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        align-items: center;
+    }
+
+    .logo-header {
+        
+        img {
+            width: 135px;
+        }
+    }
+}
+
+
+// Sticky header
+.header-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    z-index: 9999;
+    transition: top 0.25s ease-in-out;
+
+    &.header-sticky--unpinned {
+        top: -130px;
+    }
+
+    &.header-sticky--pinned {
+        
+        &.header-sticky--not-top {
+            background-color: #fff;
+            top: -40px;
+            box-shadow: 0 10px 30px rgba(7, 27, 130, 0.1);
+        }
+    }
+}
+
+// Header actions
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+    .menu-toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+}
+
+.menu-toggle {
+    width: 30px;
+    height: 18px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    margin-left: 10px;
+    
+    span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $color-heading;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: all 0.25s ease-in-out;
+        
+        &:nth-child(1) {
+            width: 50%;
+            top: 0;
+        }
+        
+        &:nth-child(2) {
+            top: 8px;
+        }
+        
+        &:nth-child(3) {
+            top: 16px;
+            width: 50%;
+            right: 0;
+            left: auto;
+        }
+    }
+}

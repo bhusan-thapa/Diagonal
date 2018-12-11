@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Header.Home",
+    "defaultMessage": "Home"
+  },
+  {
+    "id": "Header.whoarewe",
+    "defaultMessage": "Who are we"
+  },
+  {
+    "id": "Home.whatwedo",
+    "defaultMessage": "What we do"
+  },
+  {
+    "id": "Home.expertise",
+    "defaultMessage": "Expertise"
+  },
+  {
+    "id": "Home.contactus",
+    "defaultMessage": "Contact Us"
+  },
+  {
+    "id": "Home.getaquote",
+    "defaultMessage": "Get a quote"
+  },
+  {
+    "id": "Home.menu",
+    "defaultMessage": "Menu"
+  }
+]
